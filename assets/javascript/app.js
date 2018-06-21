@@ -46,10 +46,10 @@ $(document).ready(function() {
         unansweredTotal++;
         gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + 
         "</span></p>" + "<p class='text-center p-3'>You totally ran out of time!  The correct answer was: " + 
-        correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong bt-2' src='assets/images/grumpy_cat.jpg'>";
-    
+        correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong bt-2' src='assets/images/grumpyCat.gif'>";
+        meowSound.play();
         $(".mainArea").html(gameHTML);
-        setTimeout(wait, 4000); 
+        setTimeout(wait, 3000); 
     }
     
     function userWin() {
@@ -58,7 +58,7 @@ $(document).ready(function() {
         counter + "</span></p>" + "<p class='text-center py-3'>You are Totally Correct!"  + imageArray[questionCounter];
     
         $(".mainArea").html(gameHTML);
-        setTimeout(wait, 4000);
+        setTimeout(wait, 3000);
     }
     
     function userLoss() {
@@ -68,7 +68,7 @@ $(document).ready(function() {
         correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong bt-2' src='assets/images/grumpyCat.gif'>";
     
         $(".mainArea").html(gameHTML);
-        setTimeout(wait, 4000); 
+        setTimeout(wait, 3000); 
     }
     
     function makeHtml() {
