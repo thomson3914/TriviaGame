@@ -39,7 +39,7 @@ $(document).ready(function() {
         barkSound2.play();
         resetGame();
     }); 
-    
+
     });  
     
     function userTimeOut() {
